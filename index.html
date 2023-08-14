@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serial Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Follow me <ion-icon name="heart"></ion-icon> : </h2>
+        <nav>
+            <a href="https://www.youtube.com/@HYADEV" target="_blank"><ion-icon name="logo-youtube"></ion-icon>Youtube</a>
+            <a href="https://www.tiktok.com/@hya_dev" target="_blank"><ion-icon name="logo-tiktok"></ion-icon>TikTok</a>
+            <a href="https://web.facebook.com/ayyoubhadjyoucef" target="_blank"><ion-icon name="logo-facebook"></ion-icon>facebook</a>
+            <a href="https://github.com/Ayyoubhadjyoucef" target="_blank"><ion-icon name="logo-github"></ion-icon>github</a>
+            <a href="https://www.instagram.com/ayyoubhadjyoucef/" target="_blank"><ion-icon name="logo-instagram"></ion-icon>instagram</a>
+            <a href="https://www.linkedin.com/in/ayyoubhadjyoucef" target="_blank"><ion-icon name="logo-linkedin"></ion-icon>linkedin</a>
+        </nav>
+    </header>
+    <div class="copy">Copy successful</div>
+    <div class="msg">Click on the activation key to copy it</div>
+    <div class="box">
+      <span class="serial"></span>
+      <button id="gen">Generat</button>
+    </div>
+    <label for="inp">Length of serial (min = 8 || max = 24 character ): </label>
+    <input id="inp" type="number" min="8" max="24" maxlength="2" />
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
