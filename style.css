@@ -1,70 +1,41 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
 }
 
-body{
-  display:flex;
+body {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
   height: 100vh;
-  background-color: #F4F2DE;
+  background-color: #f4f2de;
   width: 100%;
   padding: 0 15px;
   font-family: sans-serif;
+  user-select: none;
 }
-header{
-  display:flex;
-  align-items:center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-}
-h2{
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-h2 ion-icon {
-  margin-left: 15px;
-}
-nav{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-nav a{
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-  font-size: 25px;
-}
-nav a ion-icon{
-  margin-right: 10px;
-}
-.copy , .msg{
+
+.copy,
+.msg {
   width: fit-content;
   padding: 15px;
   background-color: #60b3bd;
   font-weight: bold;
   font-size: 18px;
   position: absolute;
-  left:50%;
-  transform:translateX(-50%);
+  left: 50%;
+  transform: translateX(-50%);
   top: -100px;
   border-radius: 10px;
   opacity: 0;
   text-align: center;
   transition: 0.5s;
 }
-.box{
+.box {
   width: 470px;
   padding: 15px;
   border: 1px solid black;
@@ -72,7 +43,7 @@ nav a ion-icon{
   height: 50px;
   position: relative;
 }
-.box .serial{
+.box .serial {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -82,47 +53,47 @@ nav a ion-icon{
   padding: 10px;
   letter-spacing: 2px;
   text-align: center;
-  user-select: none;
+
+  transition: 0.5s;
 }
-.box button{
+.box button {
   position: absolute;
   width: fit-content;
   right: 0;
-  top:0;
+  top: 0;
   height: 100%;
   padding: 10px;
   border-radius: 0 7px 7px 0;
-  background-color: #7C9D96;
+  background-color: #7c9d96;
   text-transform: uppercase;
   font-weight: bold;
   border: none;
-  user-select: none;
-  cursor:pointer;
+  cursor: pointer;
 }
-label{
+label {
   font-size: 20px;
   text-align: center;
 }
-input{
+input {
   border: 1px solid black;
-  padding:15px;
+  padding: 15px;
   background-color: transparent;
   border-radius: 10px;
   font-size: 18px;
   text-align: center;
 }
-.top-30{
+.top-30 {
   top: 20px;
   opacity: 1;
 }
-@media (max-width:767px) {
-  .box{
+@media (max-width: 767px) {
+  .box {
     max-width: 100%;
   }
-  .box .serial{
+  .box .serial {
     text-align: left;
   }
-  .top-30{
+  .top-30 {
     top: 10px;
   }
 }

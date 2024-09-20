@@ -1,19 +1,8 @@
 let serialEl = document.querySelector(".serial");
 let btnGen = document.querySelector("#gen");
-let input = document.querySelector("#inp");
 
 btnGen.onclick = () => {
-  let serialLen;
-  if (input.value != "") {
-    if (input.value > 24 || input.value < 8) {
-      serialLen = 16;
-    } else {
-      serialLen = input.value;
-    }
-  } else {
-    serialLen = 16;
-  }
-  input.value = serialLen;
+  let serialLen = 16;
   let charachter = "azertyuiopqsdfghjklmwxcvbn";
   charachter += charachter.toUpperCase() + "0123456789";
   let serial = "";
